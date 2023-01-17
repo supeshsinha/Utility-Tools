@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+#signedIn{
+    display: none;
+}
+
+body{
+    background-color: rgb(212, 211, 211);
+    font-family: "Open Sans";
+}
+.container{
+    width: 100%;
+    max-width: 800px;
+    background-color: whitesmoke;
+    margin: auto;
+    margin-top: 7vh;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 20px grey;
+    box-sizing: border-box;
+}
+
+.sign{
+    padding: 8px;
+    padding-top: 12px;
+    background-color: white;
+    border:1px solid rgb(165, 164, 164);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 400;
+}
+button.sign{
+    font-size: 1.3em;
+    padding-top: 8px;
+}
+.sign:hover{
+    background-color: rgb(202, 201, 201);
+}
+#signin span{
+    font-size: 1.3em;
+    vertical-align:bottom;
+    margin-left: 4px;
+}
+#signin img{
+    height: 1em;
+    width: 1em;
+}
+
+nav {
+    width : 100%;
+    background-color: aqua;
+    color: whitesmoke;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    background-color:blueviolet;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+nav .start{
+    flex-grow: 1;
+    flex-basis: 50px;
+}
+nav .middle{
+    flex-grow: 1;
+    text-align: center;
+    flex-basis: 50px;
+}
+
+nav .end{
+    flex-grow: 1;
+    text-align: right;  
+    cursor: pointer;
+    flex-basis: 50px;  
+}
+input{
+    font-size: 1.2em;
+    padding: 8px 18px;
+    border-radius: 25px;
+    border: 1px solid grey;
+    flex-grow: 1;
+    margin: 20px 10px;
+
+}
+.flex{
+    display: flex;
+}
+#tododes{
+    flex-grow: 4;
+}
+#createdata{
+    font-size: 1.2em;
+    padding: 8px 18px;
+    border-radius: 25px;
+    background-color: rgb(12, 12, 95);
+    color: whitesmoke;
+    border: 1px solid grey;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+#createdata:hover{
+    background-color: rgb(40, 40, 148);
+}
+table{
+    margin: 25px 10px;
+    width: 100%;
+    font-size: 1.2em;
+    
+}
+.left{
+    margin-right: 8px;
+}
+.right{
+    margin-left: 8px;
+}
+td img{
+    height: 1.2em;
+    cursor: pointer;
+}
+
+@media all and (max-width: 480px) {
+    .flex{
+        display: block;
+    }
+    input{
+        display: block;
+        margin: auto;
+    }
+    .container{
+        margin-top: 0;
+    }
+  }

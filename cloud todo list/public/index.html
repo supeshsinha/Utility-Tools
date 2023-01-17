@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud To-Do</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="start">hi</li>
+            <li class="middle">Cloud To-Do List App</li>
+            <li class="end">SignIn</li>
+        </ul>
+
+    </nav>
+    <div class="container">
+
+        <section id="notSignedIn">
+
+            <h2>Hi Welcome to cloud to do app!</h2>
+            <p>Please sign in to access your saved to-do list.</p>
+            <p>This is a cloud based persistent to-do list app.<br> You can login to this website from any of your device and access you list.</p>
+            <br>
+            <div id="signin" class="sign" style="display:inline">
+                <img src="./img/google.png"><span>Sign in with Google</span>
+            </div>
+
+        </section>
+
+        <section id="signedIn">
+
+            <button id="signout" class="sign">Sign Out</button><br><br>
+            <h3 id="custom-text"></h3>
+            <h3>Enter a new item</h3>
+            <div class="flex">
+                <input type="text" name="title" id="todotitle" placeholder="Enter a Title">
+                <input type="text" name="description" id="tododes" placeholder="Enter a Description">
+            </div>
+            <button id="createdata">Submit</button><br><br>
+
+            <h2>My Todo List</h2>
+            <br>
+            <table id="listdata">
+
+            </table>
+
+        </section>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyA2Lwn3fndiy2wHDm_GjR5DGUYa5ie6tU4",
+            authDomain: "cloud-todo-eee7f.firebaseapp.com",
+            projectId: "cloud-todo-eee7f",
+            storageBucket: "cloud-todo-eee7f.appspot.com",
+            messagingSenderId: "133830750242",
+            appId: "1:133830750242:web:112cda1ed664b047fb9a7b"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
