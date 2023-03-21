@@ -5,3 +5,6 @@ cards[0].addEventListener("click", function(){
 cards[1].addEventListener("click", function(){
     window.open("./calculator/")
 })
+cards[2].addEventListener("click", function(){
+    window.open("./wordle/")
+})
